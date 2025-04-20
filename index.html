@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSM Auto Labz - Professional Car Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-blue-600">SSM Auto Labz</div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600">Services</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-blue-600">Gallery</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600">Testimonials</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700">
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="#services" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Services</a>
+            <a href="#gallery" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Gallery</a>
+            <a href="#testimonials" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Testimonials</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-blue-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Your Car Deserves The Best</h1>
+                <p class="text-xl mb-8">Professional Car Care Services at SSM Auto Labz</p>
+                <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg">
+                    <i class="bi bi-car-front text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Car Wash</h3>
+                    <p class="text-gray-600 mt-2">Professional washing and detailing services for your vehicle</p>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg">
+                    <i class="bi bi-tools text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Detailing</h3>
+                    <p class="text-gray-600 mt-2">Interior and exterior detailing for a showroom finish</p>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-lg">
+                    <i class="bi bi-gear text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-semibold mt-4">Accessories</h3>
+                    <p class="text-gray-600 mt-2">Quality car accessories and installations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <img src="https://images.unsplash.com/photo-1552205913-3d96405c8791" alt="Car Service" class="rounded-lg shadow-md">
+                <img src="https://images.unsplash.com/photo-1635770997825-3d332be85e11" alt="Car Detailing" class="rounded-lg shadow-md">
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="Car Wash" class="rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600">"Excellent service! My car looks brand new after their detailing service."</p>
+                    <p class="font-semibold mt-4">- John D.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                        <i class="bi bi-star-fill text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600">"Professional team and great attention to detail. Highly recommended!"</p>
+                    <p class="font-semibold mt-4">- Sarah M.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Business Hours</h3>
+                    <p class="mb-2">Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                    <p class="mb-4">Sunday: Closed</p>
+                    
+                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt"></i> 123 Auto Street, City</p>
+                    <p class="mb-2"><i class="bi bi-telephone"></i> +1 234 567 8900</p>
+                    <p class="mb-2"><i class="bi bi-envelope"></i> contact@ssmautolabz.com</p>
+                </div>
+                <form class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Name</label>
+                        <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-600">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-600">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">Message</label>
+                        <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-600" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float bg-green-500 text-white p-4 rounded-full hover:bg-green-600">
+        <i class="bi bi-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2023 SSM Auto Labz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Form submission
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            form.reset();
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
